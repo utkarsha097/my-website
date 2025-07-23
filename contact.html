@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - GlamWear</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-rose-50 text-slate-800 min-h-screen flex flex-col">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-white shadow p-4">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+      <h1 class="text-2xl font-bold text-rose-600">GlamWear</h1>
+      <ul class="flex flex-col md:flex-row gap-2 md:gap-4 font-medium text-rose-500 text-center">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="shop.html" class="hover:underline">Shop</a></li>
+        <li><a href="clothes.html" class="hover:underline">Clothes</a></li>
+        <li><a href="about.html" class="hover:underline">About</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Form Section -->
+  <section class="text-center px-4 py-8 sm:px-6 md:px-10">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-rose-600">Get in Touch</h2>
+    <p class="text-base sm:text-lg mb-6 text-slate-700">
+      We’d love to hear from you! Fill out the form below and we’ll be in touch soon.
+    </p>
+
+    <form onsubmit="call(); return false;" id="contactForm" class="max-w-xl mx-auto bg-white p-6 sm:p-8 rounded-lg shadow space-y-4">
+      <input type="text" name="name" placeholder="Name" required
+        class="w-full p-3 border border-rose-300 rounded focus:outline-none focus:ring focus:ring-rose-200" />
+
+      <input type="tel" name="mobile" placeholder="Mobile Number" required
+        class="w-full p-3 border border-rose-300 rounded focus:outline-none focus:ring focus:ring-rose-200" />
+
+      <input type="email" name="email" placeholder="Email" required
+        class="w-full p-3 border border-rose-300 rounded focus:outline-none focus:ring focus:ring-rose-200" />
+
+      <textarea name="address" placeholder="Address" required rows="2"
+        class="w-full p-3 border border-rose-300 rounded resize-none focus:outline-none focus:ring focus:ring-rose-200"></textarea>
+
+      <input type="date" name="date" required
+        class="w-full p-3 border border-rose-300 rounded focus:outline-none focus:ring focus:ring-rose-200" />
+
+      <textarea name="message" placeholder="Your message" required rows="4"
+        class="w-full p-3 border border-rose-300 rounded resize-none focus:outline-none focus:ring focus:ring-rose-200"></textarea>
+
+      <button type="submit"
+        class="w-full bg-rose-500 text-white py-3 rounded hover:bg-rose-600 transition duration-200">
+        Submit
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow mt-auto">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-center">
+      <p class="text-slate-600">&copy; 2025 GlamWear. All rights reserved.</p>
+      <p class="text-slate-700 mt-2">
+        GlamWear offers a curated collection of cosmetics and fashion apparel designed to help you express your unique style with confidence and elegance.
+      </p>
+      <p class="text-slate-700 mt-1">
+        📧 Reach us at:
+        <a href="mailto:utkarshapatil464@gmail.com" class="text-rose-600 hover:underline">
+          utkarshapatil464@gmail.com
+        </a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
